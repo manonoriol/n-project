@@ -23,7 +23,7 @@ body {
   left: 50%;
   width: 6px;
   height: 100vh;
-  background-color: #fff;
+  background-color: #F6511D;
   z-index: 1;
   transform: scaleY(0);
 }
@@ -66,15 +66,13 @@ body {
 }
 
 .menu-link a:hover {
-  background-image: url("brush-stroke.png");
-  background-size: 100%;
-  background-repeat: no-repeat;
+  color: #F6511D;
 
 }
 
 .menu-link a span {
   font-family: "Bigilla";
-  font-size: 24px;
+  font-size: 20px;
 }
 
 .contact .title {
@@ -101,8 +99,8 @@ body {
 }
 
 .menu-close-img {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   border-radius: 100%;
   opacity: 1;
 }
@@ -146,9 +144,52 @@ img {
   .hr {
     display: none;
   }
-
-  img {
-    width: 40%;
-  }
 }
+
+.home {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+}
+
+
+.bloc h1 {
+  display: flex;
+  flex-direction: column;
+  font-family: helvetica;
+  letter-spacing: 3px;
+  line-height: 100px;
+}
+.bloc h1 > span {
+  font-size: 90px;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(-30px);
+}
+
+.bloc h1 > span:nth-child(1) {
+  animation: apparition 0.8s 0.3s ease-out forwards;
+}
+
+.bloc h1 > span:nth-child(2) {
+  animation: apparition 0.8s 0.5s ease-out forwards;
+}
+
+.bloc h1 > span:nth-child(3) {
+  animation: apparition 0.8s 0.7s ease-out forwards;
+}
+
+.bloc h1 > span:nth-child(4) {
+  animation: apparition 0.8s 0.9s ease-out forwards;
+}
+
+@keyframes apparition {
+  100% {
+    opacity: 1;
+    transform: none;
+    transform: translateY(-30px);
+  }
 
